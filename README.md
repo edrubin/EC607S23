@@ -22,9 +22,8 @@ Welcome to **Economics 607: Econometrics III** (Spring 2023) at the University o
 
 **Office hours**
 
-**[Ed Rubin](https://edrub.in)**: TBD
-
-**Jaichung Lee**: TBD
+- **[Ed Rubin](https://edrub.in)**: TBD
+- **Jaichung Lee**: TBD
 
 ## Books
 

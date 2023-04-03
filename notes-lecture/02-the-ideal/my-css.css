@@ -233,14 +233,14 @@
   font-size: 70%;
 }
 
-.inverse > h2 {
+.inverse h2 {
   color: #e64173;
   font-weight: 300;
   font-size: 40px;
   font-style: italic;
   margin-top: -25px;
 }
-.title-slide > h2  {
+.title-slide h2  {
   margin-top: -25px;
   padding-bottom: -20px;
   color: rgba(249, 38, 114, 0.75);

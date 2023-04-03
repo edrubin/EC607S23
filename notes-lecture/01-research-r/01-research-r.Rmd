@@ -166,8 +166,7 @@ name: schedule
 
 ## Upcoming
 
-- No class Wednesday (do assignment)
-- Learn more .mono[R]: First assignment 
+- Learn more .mono[R]: First assignment!
 - Review metrics and building intution for causality and inference.
 - Build momentum.
 

@@ -177,7 +177,7 @@ Research basics, our class, and .mono[R]
 
 ### Future
 
-.hi-slate[Lab:] Meet Kyu and start deepening R knowledge.
+.hi-slate[Lab:] Meet Jaichung and start deepening R knowledge.
 <br>.hi[Long run:] Deepen understandings/intuitions for causality and inference.
 
 ---
