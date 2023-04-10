@@ -22,7 +22,7 @@ Welcome to **Economics 607: Econometrics III** (Spring 2023) at the University o
 
 **Office hours**
 
-- **[Ed Rubin](https://edrub.in)**: TBD
+- **[Ed Rubin](https://edrub.in)**: Mondays 4pm–5pm, [PLC 519](https://map.uoregon.edu/a5232bb70)
 - **Jaichung Lee**: TBD
 
 ## Books
@@ -226,7 +226,7 @@ The content of the lectures mainly follows *MHE* and [Michael Anderson](https://
 
 ## Lab slides
 
-Kyutaro Matsuzawa will walk you through R and applications of the course content. You *should attend*.
+Jaichung Lee will walk you through R and applications of the course content. You *should attend*.
 
 ## Previous lab slides
 
@@ -293,7 +293,8 @@ Kyutaro Matsuzawa will walk you through R and applications of the course content
 
 Problem sets combining econometric theory and R.
 
-*Coming soon.*
+[**Problem set 1**](problem-sets/001)
+<br>**Due:** 13 April 2022 by 11:59pm (submit on Canvas)
 
 ## Project
 
@@ -321,8 +322,12 @@ Step 2: **Project proposal**
 
 ## Exams
 
+The final exam has two parts:
+
 - In class: 10:15am–12:15pm on Monday, June 12th (2023).
-- Take-home: Responses due by 11:59pm Pacific on Wednesday, June 14th, 2023**.
+- Take-home: Responses due by 11:59pm Pacific on Wednesday, June 14th, 2023.
+
+We do not have a midterm exam.
 
 ## Grades
 
