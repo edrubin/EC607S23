@@ -22,7 +22,7 @@ Welcome to **Economics 607: Econometrics III** (Spring 2023) at the University o
 
 **Office hours**
 
-- **[Ed Rubin](https://edrub.in)**: Thursdays 3:30pm–4:30pm, [PLC 519](https://map.uoregon.edu/a5232bb70)
+- **[Ed Rubin](https://edrub.in)**: Thursdays 4pm–5pm, [PLC 519](https://map.uoregon.edu/a5232bb70)
 - **[Jaichung Lee](https://github.com/jaichung)**: Wednesdays 4pm–5pm
 
 ## Books
