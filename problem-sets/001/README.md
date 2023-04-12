@@ -8,7 +8,7 @@ The function should
 - output estimated coefficients
 - output estimated standard errors
 
-Your function should only use matrix operations (e.g., `%*%`) and basic summary statistics (e.g., `sum`). Do not use 
+Your function should only use matrix operations (e.g., `%*%`) and basic summary statistics (e.g., `sum`). Do not use more complex functions.
 
 *Hint:* The function named `function()` allows you to write a function. For example, 
 

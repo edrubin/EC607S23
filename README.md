@@ -22,8 +22,8 @@ Welcome to **Economics 607: Econometrics III** (Spring 2023) at the University o
 
 **Office hours**
 
-- **[Ed Rubin](https://edrub.in)**: Mondays 4pm–5pm, [PLC 519](https://map.uoregon.edu/a5232bb70)
-- **Jaichung Lee**: TBD
+- **[Ed Rubin](https://edrub.in)**: Thursdays 3:30pm–4:30pm, [PLC 519](https://map.uoregon.edu/a5232bb70)
+- **[Jaichung Lee](https://github.com/jaichung)**: Wednesdays 4pm–5pm
 
 ## Books
 
@@ -224,9 +224,9 @@ The content of the lectures mainly follows *MHE* and [Michael Anderson](https://
 
 **Readings:** [Introduction to statistical learning](http://faculty.marshall.usc.edu/gareth-james/ISL/)
 
-## Lab slides
+## Lab
 
-Jaichung Lee will walk you through R and applications of the course content. You *should attend*.
+[Jaichung Lee will walk you through R and applications](https://github.com/jaichung/EC607-Core-Metrics-2023-Spring-Lab) of the course content. You *should attend*.
 
 ## Previous lab slides
 
