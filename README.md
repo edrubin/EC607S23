@@ -100,28 +100,28 @@ The content of the lectures mainly follows *MHE* and [Michael Anderson](https://
 
  **Readings:** MHE chapter 3.1
 
-**[Lecture 04: Inference and Simulation](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/04-inference/04-inference.html)**
+**[Lecture 04: Inference and Simulation](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/04-inference/04-inference.html)**
 
 1. How do we move from populations to samples?
 2. What matters for drawing basic statistical inferences about the population?
 3. How can we learn about inference from simulation?
 4. How do we run (parallelized) simulations in R?
 
-**Note formats:** [.html](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/04-inference/04-inference.html) |
-[.pdf](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/04-inference/04-inference.pdf) |
-[.Rmd](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/04-inference/04-inference.Rmd)
+**Note formats:** [.html](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/04-inference/04-inference.html) |
+[.pdf](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/04-inference/04-inference.pdf) |
+[.Rmd](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/04-inference/04-inference.Rmd)
 
  **Readings:** MHE chapter 3
 
-**[Lecture 05: Regression Stuff](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/05-regression-stuff/05-regression-stuff.html)**
+**[Lecture 05: Regression Stuff](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/05-regression-stuff/05-regression-stuff.html)**
 
 1. Saturated models
 1. When is regression causal?
 1. The conditional-independence assumption
 
-**Note formats:** [.html](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/05-regression-stuff/05-regression-stuff.html) |
-[.pdf](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/05-regression-stuff/05-regression-stuff.pdf) |
-[.Rmd](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/05-regression-stuff/05-regression-stuff.Rmd)
+**Note formats:** [.html](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/05-regression-stuff/05-regression-stuff.html) |
+[.pdf](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/05-regression-stuff/05-regression-stuff.pdf) |
+[.Rmd](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/05-regression-stuff/05-regression-stuff.Rmd)
 
  **Readings:** Still MHE chapter 3
 
@@ -302,11 +302,13 @@ Building a research project/proposal.
 
 Step 1: **Research question (causal relationship of interest) and motivation.**
 
-- *Assignment:* Pitch a project—including the causal question of interest, the motivation.
+- *Assignment:* Pitch a project that includes a causal question of interest. the motivation.
 - This project should be something you could turn into a legitimate research project.
-- Length: 100–200 [words](https://grammarly.com)
+- Length: 150–250 [words](https://grammarly.com)
+- You should have several drafts (only submit the last one).
+- Talk with your classmates (and me!).
 
-**Due:** TBD
+**Due:** April 27
 
 Step 2: **Project proposal**
 
