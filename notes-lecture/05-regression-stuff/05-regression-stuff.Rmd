@@ -951,6 +951,40 @@ lm(wage ~ grad + female, data = ex_df) %>% tidy() %>%
 ```
 
 ---
+# Regression and causality
+## CIA example
+
+Now we could also (unnecessarily) saturate the model...
+
+$$
+\begin{align}
+  \text{Wage}_i = \alpha + \beta_1 \text{Grad}_i + \beta_2 \text{Female}_i + \beta_3 \text{Grad}_i \times \text{Female}_i + \varepsilon_i
+\end{align}
+$$
+
+`lm(wage ~ grad * female, data = ex_df)`
+
+
+```{r, echo = F}
+lm(wage ~ grad * female, data = ex_df) %>% tidy() %>%
+  select(1:4) %>%
+  mutate(term = c("Intercept", "Graduate", "Female", "Graduate ⨉ Female")) %>%
+  kable(col.names = c("", "Coef.", "S.E.", "t stat"), digits = 2)
+```
+
+---
+# Regression and causality
+## Summary
+
+As always, assumptions matter.
+
+- When is the CEF causal?
+
+- Do you have a plausible/compelling argument for a valid CIA?
+
+Least-squares regression helps estimate, but it also rests on assumptions.
+
+---
 layout: false
 # Table of contents
 

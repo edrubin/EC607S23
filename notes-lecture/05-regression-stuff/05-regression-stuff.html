@@ -815,6 +815,70 @@ $$
 &lt;/table&gt;
 
 ---
+# Regression and causality
+## CIA example
+
+Now we could also (unnecessarily) saturate the model...
+
+$$
+`\begin{align}
+  \text{Wage}_i = \alpha + \beta_1 \text{Grad}_i + \beta_2 \text{Female}_i + \beta_3 \text{Grad}_i \times \text{Female}_i + \varepsilon_i
+\end{align}`
+$$
+
+`lm(wage ~ grad * female, data = ex_df)`
+
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;  &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Coef. &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; S.E. &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; t stat &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Intercept &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 99.98 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.06 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1654.68 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Graduate &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5.03 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.08 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 59.28 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Female &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -24.99 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.10 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -238.73 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Graduate ⨉ Female &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.01 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.13 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -0.04 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+# Regression and causality
+## Summary
+
+As always, assumptions matter.
+
+- When is the CEF causal?
+
+- Do you have a plausible/compelling argument for a valid CIA?
+
+Least-squares regression helps estimate, but it also rests on assumptions.
+
+---
 layout: false
 # Table of contents
 

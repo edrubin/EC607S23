@@ -646,13 +646,38 @@ ggplot(data = sim_df, aes(x = std.error, fill = se_type)) +
 ---
 class: clear, middle
 
-Comparing the distributions of $t$ statistics for the coefficient on $x$
+Comparing distributions of $t$ stats for the coefficient on $x$ $(H_o:\:\beta_1 = 0)$
 
 ```{r, sim_plot2, echo = F}
 ggplot(data = sim_df, aes(x = statistic, fill = se_type)) +
   geom_density(color = NA, kernel = "epanechnikov") +
   geom_hline(yintercept = 0) +
   geom_vline(xintercept = qt(0.975, df = 28), linetype = "longdash", color = red_pink) +
+  xlab("t statistic") +
+  ylab("Density") +
+  scale_fill_viridis(
+    "", labels = c("Classical", "Het. Robust"), discrete = T,
+    option = "B", begin = 0.25, end = 0.85, alpha = 0.9
+  ) +
+  theme_pander(base_size = 20, base_family = "Fira Sans Condensed")
+```
+
+---
+class: clear, middle
+
+Comparing distributions of $t$ stats for the coefficient on $x$ $(H_o:\:\beta_1 = \beta)$
+
+```{r, sim_plot2b, echo = F}
+b_true = coefficients(lm(y ~ x, dgp_df))[2]
+ggplot(
+  data = sim_df |> mutate(
+    stat = (estimate - b_true) / std.error
+  ),
+  aes(x = stat, fill = se_type)
+) +
+  geom_density(color = NA, kernel = "epanechnikov") +
+  geom_hline(yintercept = 0) +
+  geom_vline(xintercept = qt(c(0.025, 0.975), df = 28), linetype = "longdash", color = red_pink) +
   xlab("t statistic") +
   ylab("Density") +
   scale_fill_viridis(
@@ -691,9 +716,30 @@ ggplot(
   theme_pander(base_size = 20, base_family = "Fira Sans Condensed")
 ```
 ---
+# Simulation
+## How did it go?
+
+```{r, calc_stats, include = FALSE}
+sim_df %<>% mutate(
+  pv_true = 2 * pt(abs(estimate - b_true) / std.error, df = 28, lower.tail = FALSE),
+  pv_zero = 2 * pt(abs(estimate - 0) / std.error, df = 28, lower.tail = FALSE)
+)
+```
+
+For a 5% test the .b.orange[classical] SEs
+- reject the .b.orange[true value] in `r sim_df |> filter(se_type == 'classical') |> summarize(mean(pv_true < 0.05)) |> as.numeric() |> scales::percent(accuracy = 0.01)` of samples
+- reject .b.orange[zero] in `r sim_df |> filter(se_type == 'classical') |> summarize(mean(pv_zero < 0.05)) |> as.numeric() |> scales::percent(accuracy = 0.01)` of samples
+
+For a 5% test the .b.purple[het.-robust] SEs
+- reject the .b.purple[true value] in `r sim_df |> filter(se_type == 'HC2') |> summarize(mean(pv_true < 0.05)) |> as.numeric() |> scales::percent(accuracy = 0.01)` of samples
+- reject .b.purple[zero] in `r sim_df |> filter(se_type == 'HC2') |> summarize(mean(pv_zero < 0.05)) |> as.numeric() |> scales::percent(accuracy = 0.01)` of samples
+
+---
 class: clear, middle
 
-.qa[Q] All of these test are for a false H.sub[0]. How would the simulation change to enforce a *true* null hypothesis?
+All of these test are for a false H.sub[0].
+
+.qa[Q] How would the simulation change to enforce a *true* null hypothesis?
 
 ---
 layout: true
