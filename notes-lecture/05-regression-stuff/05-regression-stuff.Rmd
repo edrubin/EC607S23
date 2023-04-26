@@ -277,7 +277,7 @@ If you have multiple explanatory variables, you need .attn[interactions].
 
 --
 
-.ex[Example.sub[3]] Regressing .purple[Wages] on .orange[College Graduation] and .red[Gender].
+.ex[Example.sub[3]] Regressing .purple[Wages] on .orange[College Graduation] and .red[Sex].
 
 --
 
@@ -858,7 +858,7 @@ class: clear, center
 ```{r, ex_plot1, echo = F}
 # Plot
 ggplot(
-  data = ex_df %>% mutate(Gender = factor(female, labels = c("Female", "Male"))),
+  data = ex_df %>% mutate(Sex = factor(female, labels = c("Female", "Male"))),
   aes(x = grad, y = wage)
 ) +
 geom_jitter(alpha = 0.3, width = 0.1, shape = 1, size = 2.5) +
@@ -887,11 +887,11 @@ class: clear, center
 ```{r, ex_plot2, echo = F, eval = T}
 # Plot
 ggplot(
-  data = ex_df %>% mutate(Gender = factor(female, labels = c("Female", "Male"))),
+  data = ex_df %>% mutate(Sex = factor(female, labels = c("Female", "Male"))),
   aes(x = grad, y = wage)
 ) +
 geom_jitter(
-  aes(color = Gender),
+  aes(color = Sex),
   alpha = 0.2, width = 0.1,
   shape = 1, size = 2.5
 ) +
