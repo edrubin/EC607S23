@@ -23,7 +23,7 @@ Welcome to **Economics 607: Econometrics III** (Spring 2023) at the University o
 **Office hours**
 
 - **[Ed Rubin](https://edrub.in)**: Thursdays 4pm–5pm, [PLC 519](https://map.uoregon.edu/a5232bb70)
-- **[Jaichung Lee](https://github.com/jaichung)**: Wednesdays 4pm–5pm
+- **Ngan Tran**
 
 ## Books
 
@@ -136,28 +136,28 @@ The content of the lectures mainly follows *MHE* and [Michael Anderson](https://
 
  **Readings:** Still MHE chapter 3
 
-**[Lecture 07: DAGs](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/07-dags/07-dags.html)**
+**[Lecture 07: DAGs](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/07-dags/07-dags.html)**
 
 1. Defining graphs 
 1. Underlying theory for DAGs
 1. Building blocks
 1. Examples
 
- **Note formats:** [.html](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/07-dags/07-dags.html) |
-[.pdf](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/07-dags/07-dags.pdf) |
- [.Rmd](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/07-dags/07-dags.Rmd)
+ **Note formats:** [.html](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/07-dags/07-dags.html) |
+[.pdf](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/07-dags/07-dags.pdf) |
+ [.Rmd](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/07-dags/07-dags.Rmd)
 <br>**Readings:** Brady Neal's book, chapters 1–3 (especially 2–3)
 
 *Extras:* [dagitty](http://dagitty.net) and [ggdag](https://ggdag.malco.io/index.html)
 
-**[Lecture 08: Matching](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/08-matching/08-matching.html)**
+**[Lecture 08: Matching](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/08-matching/08-matching.html)**
 
 1. Matching estimators: Nearest neighbor and kernel
 1. Propensity-score methods: Regression control, treatment-effect heterogeneity, blocking, weighting, *doubly robust*
 
- **Note formats:** [.html](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/08-matching/08-matching.html) |
-[.pdf](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/08-matching/08-matching.pdf) |
- [.Rmd](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/08-matching/08-matching.Rmd)
+ **Note formats:** [.html](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/08-matching/08-matching.html) |
+[.pdf](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/08-matching/08-matching.pdf) |
+ [.Rmd](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/08-matching/08-matching.Rmd)
 <br>**Readings:** MHE chapter 3 + C&T section 25.4
 
 **[Lecture 09: Instrumental Variables](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/09-iv/09-iv.html)**
@@ -226,7 +226,7 @@ The content of the lectures mainly follows *MHE* and [Michael Anderson](https://
 
 ## Lab
 
-[Jaichung Lee will walk you through R and applications](https://github.com/jaichung/EC607-Core-Metrics-2023-Spring-Lab) of the course content. You *should attend*.
+Ngan Tran will walk you through R and applications of the course content. You *should attend*.
 
 ## Previous lab slides
 
