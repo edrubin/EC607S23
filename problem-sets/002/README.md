@@ -1,6 +1,6 @@
 # Problem set 002
 
-CIA, DAGs, Matching, and IV
+CIA, DAGs, and Matching
 
 ## Goal
 
