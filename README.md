@@ -294,7 +294,10 @@ Ngan Tran will walk you through R and applications of the course content. You *s
 Problem sets combining econometric theory and R.
 
 [**Problem set 1**](problem-sets/001)
-<br>**Due:** 13 April 2022 by 11:59pm (submit on Canvas)
+<br>**Due:** 13 April 2023 by 11:59pm (submit on Canvas)
+
+[**Problem set 1**](problem-sets/002)
+<br>**Due:** 21 May 2023 by 11:59pm (submit on Canvas)
 
 ## Project
 
