@@ -160,27 +160,28 @@ The content of the lectures mainly follows *MHE* and [Michael Anderson](https://
  [.Rmd](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/08-matching/08-matching.Rmd)
 <br>**Readings:** MHE chapter 3 + C&T section 25.4
 
-**[Lecture 09: Instrumental Variables](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/09-iv/09-iv.html)**
+**[Lecture 09: Instrumental Variables](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/09-iv/09-iv.html)**
 
 1. General research designs
 1. Instrumental variables (IV)
 1. Two-stage least squares (2SLS)
 1. Heterogeneous treatment effects and the LATE
 
- **Note formats:** [.html](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/09-iv/09-iv.html) | 
-[.pdf](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/09-iv/09-iv.pdf) |
- [.Rmd](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/09-iv/09-iv.Rmd)
+ **Note formats:** [.html](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/09-iv/09-iv.html) | 
+[.pdf](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/09-iv/09-iv.pdf) |
+ [.Rmd](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/09-iv/09-iv.Rmd)
 <br>**Readings:** MHE chapter 4 + C&T sections 4.8–4.9
+<br>**Additional material:** [Paper on machine learning the first stage of 2SLS](https://edrub.in/Papers/draft-mliv.pdf)
 
-**[Lecture 10: Regression Discontinuity](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/10-rd/10-rd.html)**
+**[Lecture 10: Regression Discontinuity](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/10-rd/10-rd.html)**
 
 1. Sharp regression discontinuities
 1. Fuzzy regression discontinuities
 1. Graphical analyses
 
- **Note formats:** [.html](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/10-rd/10-rd.html) |
-[.pdf](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/10-rd/10-rd.pdf) |
- [.Rmd](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/10-rd/10-rd.Rmd)
+ **Note formats:** [.html](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/10-rd/10-rd.html) |
+[.pdf](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/10-rd/10-rd.pdf) |
+ [.Rmd](https://raw.githack.com/edrubin/EC607S23/master/notes-lecture/10-rd/10-rd.Rmd)
 <br>**Readings:** MHE chapter 6 + C&T sections 25.6
 
 **[Lecture 11: Inference: Clustering](https://raw.githack.com/edrubin/EC607S22/master/notes-lecture/11-clustering/11-clustering.html)**
