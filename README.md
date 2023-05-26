@@ -300,6 +300,9 @@ Problem sets combining econometric theory and R.
 [**Problem set 1**](problem-sets/002)
 <br>**Due:** 21 May 2023 by 11:59pm (submit on Canvas)
 
+[**Problem set 3**](problem-sets/003)
+<br>**Due:** 01 June 2023 by 11:59pm (submit on Canvas)
+
 ## Project
 
 Building a research project/proposal.
