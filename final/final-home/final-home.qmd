@@ -1,0 +1,150 @@
+---
+title: "Take-home final"
+subtitle: "EC 607"
+author: "Edward Rubin"
+editor:
+  render-on-save: true
+format:
+  html:
+    toc: true
+    number-sections: true
+    self-contained: true
+    theme:
+    - cosmo
+    - ed.scss
+---
+
+## Admin
+
+### Academic honesty
+
+You **are not** allowed to work with anyone else. Working with *anyone* else will be considered cheating. You will receive a zero for **both** parts of the final exam and may fail the class.
+
+You *can* use online materials, books, notes, solutions, *etc*. However, you still must put all of your answers **in your own words**. Copying other people's (and chatbots') words is also considered cheating.
+
+Ngan and Ed **will not** help you debug your code. Please do not ask.
+
+### Instructions
+
+[**Due**]{style="text-decoration: underline;"} Upload your answers to [Canvas](https://canvas.uoregon.edu/) *before* 11:59 pm (Pacific) on Thursday, 15 June 2023.
+
+[**Important**]{style="text-decoration: underline;"} You must submit your answers as an HTML or PDF file, built from an RMarkdown (`.RMD`) or Quarto (`.qmd`) file (you can also submit a link to an HTML page if you prefer that route).
+
+## Prompts
+
+### An analysis (100 points)
+
+The data for this section come from the [AEA's data and code repository](https://www.openicpsr.org/openicpsr/project/139401/version/V1/view) for a 2021 paper by Kelly Bedard, Maxine Lee, and Heather Royer titled [*Using Longitudinal Data to Explore the Gender Gap for Academic Economists*](https://www.aeaweb.org/articles?id=10.1257/pandp.20211087).
+
+**Note** While Bedard, Lee and Royer focus on a panel, we are going to focus on the last year that we observe each faculty member in their panel. I already created this cross-sectional dataset: `aeapnp_bedard_lee_royer.csv`. Do not use their panel dataset.
+
+**[1.01]** (10 points) Let's get to know the dataset a bit. Create two histograms: (1) the salaries (`salary`) of female (`sex == 'Female'`) faculty members, and (2) the salaries of non-female faculty members.
+
+Is the figure consistent with a pay gap between female and non-female economics faculty?
+
+These figures (and all subsequent figures) should be well labeled and aesthetically pleasing.
+
+**Hint~1~** It will be helpful for you to create a binary indicator that equals `1` when the individual is female (`sex == 'Female'`) and equals zero otherwise. We're following the paper in the definition/approach. (There are five individuals in the data for who sex is not defined as Female or Male; they will fall into the non-female group with this indicator definition.)
+
+**Hint~2~** The [`facet_grid()`](https://ggplot2.tidyverse.org/reference/facet_grid.html) function might be helpful for creating multiple figures.
+
+**[1.02]** (10 points) Run two regressions to more directly test for a salary gap between female and non-female faculty:
+
+- Regress salary on your indicator for whether the individual is female.
+- Regress log(salary) on your indicator for whether the individual is female.
+
+Which regression makes more sense in this setting? Explain your answer.
+
+**[1.03]** (5 points) Using the potential outcomes framework, explain the treatment effect that we are attempting to estimate—and why we might or might not need controls.
+
+**[1.04]** (10 points) Could omitting *year* from the regressions above in **[1.02]** lead to biased estimates of the effect of sex on salary? 
+
+Support your answer by regressing (a) log(salary) on year and (b) your indicator for female on year.
+
+Based upon these regressions, is the bias likely to be positive or negative?
+
+**[1.05]** (10 points) For now we're going to stick with `log(salary)` as our outcome variable. The regressions will always have the female indicator. Try controlling for year
+
+- as a numeric variable
+- as a fixed effect
+
+Does controlling for year "matter"? Is it a "good" control? Explain. 
+
+**[1.06]** (10 points) The authors show that *years since PhD* is an important factor to consider in this setting—as is tenure.
+
+Continuing from the year fixed effects specification in **[1.05]**
+
+- control for years since PhD as a numeric variable
+- control for years since PhD as one of three groups (0–9, 10–19, 20+)
+- control for the three groups above *and* allow for a heterogeneous treatment effect with respect to the three groups 
+
+**[1.07]** (10 points) Keeping the year fixed effects and the three-group fixed effects for years-since-PhD, now (sequentially) add controls for
+
+- tenure (`i_tenure`)
+- whether the individual is at business school (`business`) 
+- current institution (`school_id`)
+- PhD institution (`phd_id`)
+- economics subfields (`micro + macromoney + ... + econhist + educ`)
+
+In other words: You should run five regressions for this question, where the last one has *a lot* of controls.
+
+**[1.08]** (5 points) Are the controls we included in **[1.07]** going to help or hurt our issues with selection bias? Explain.
+
+**[1.09]** (5 points) Up to this point, what type of standard errors have you been using? Do you think we should be using *cluster-robust* standard errors? Explain your answer. 
+
+**[1.10]** (15 points) Estimate whichever specification that you think is best—and use whichever inference approach you think is best. (It should still involve regressing log(salary) on an indicator for )
+
+Explain the conditional independence assumption for your chosen model, and why you think this CIA is the most plausible compared to other models we estimated. 
+
+Also justify your inference approach.
+
+**[1.11]** (5 points) Estimate the same specification *but* with salary as the outcome—rather than log(salary). If anything changes, does this affect your conclusions? Explain your answer.
+
+**[1.12]** (5 points) Do you think a matching estimator would work in this setting? Explain your answer.
+
+### A simulation (50 points)
+
+**Important** You may choose to skip this section of the test. However, if you skip this section, the highest grade you can earn in the **entire course** is a "B" (meaning no B+, A-, A, or A+). Completing this section does not guarantee you recieve higher than a "B", but it does give you a chance.
+
+**DGP** We are going to simulate a two-staged least squares setting. 
+
+You have two instruments
+
+- $z_1 \sim \text{Uniform}(-5, 5)$
+- $z_2 \sim \text{Uniform}(-5, 5)$
+
+for your endogenous variable of interest
+
+$$x = 1 + z_1 + z_2 - 2 z_2 \times p + v + w$$
+where $I(\cdot)$ denotes an indicator. 
+
+Also $v \sim N(0, 1)$, and $w \sim N(0, 2)$, and $p \sim \text{Bernoulli}(0.2)$ 
+
+*Hint:* Use `runif` and `rnorm` to draw from the uniform and normal distributions. Similarly, you can use the `rbinom()` function to draw from the Bernoulli distribution.
+
+Finally, your outcome of interest is 
+$$y = 2 + 3 x + x \times p + 2 \times u + w$$
+with $u \sim N(0, 1)$.
+
+**[2.01]** (5 points) Using the defined DGP: Explain what the ATE represents in this setting *and* give me the ATE (I want a number). Feel free to justify your answer/show your work.
+
+**[2.02]** (5 points) Using the defined DGP: Explain why a simple regression of $y$ on $x$ will fail to recover the ATE.
+
+**[2.03]** (25 points) Run a simulation to show the distribution of the estimates for the effect of $x$ on $y$ for each of the following five estimation strategies:
+
+- Plain OLS: Regress $y$ on $x$
+- IV~2~: Instrument $x$ with $z_1$
+- IV~2~: Instrument $x$ with $z_2$
+- 2SLS~1~: Instrument $x$ with both $z_1$ and $z_2$
+- 2SLS~2~: Instrument $x$ with $z_1$, $z_2$, and $z_2\times p$
+
+Include a plot of the results (densities of the distrubtions, like we did in class).
+
+Requirements
+
+- Each iteration should have 1,000 observations.
+- You should run at least 100 iterations. A thousand would be better. Ten thousand would be even better.
+
+**[2.04]** (5 points) Why are some of the IV and 2SLS approaches in **[2.03]** more biased than other approaches? Explain using the DGP.
+
+**[2.05]** (5 points) What would be the *best* strategy for estimating the effect of $x$ on $y$? Explain your answer (and what you're defining as "best").

@@ -334,7 +334,7 @@ Step 2: **Project proposal**
 The final exam has two parts:
 
 - In class: 10:15am–12:15pm on Monday, June 12th (2023).
-- Take-home: Responses due by 11:59pm Pacific on Wednesday, June 14th, 2023.
+- [Take-home:](final/final-home) Responses due by 11:59pm Pacific on Thursday, June 15th, 2023.
 
 We do not have a midterm exam.
 
