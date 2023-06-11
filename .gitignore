@@ -29,7 +29,7 @@ final-private*
 
 # Temporary holds
 # project*
-# final*
+final/final-class*
 final/final-home/setup.R
 final/final-home/sim.R
 final/final-class*

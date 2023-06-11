@@ -36,7 +36,7 @@ Ngan and Ed **will not** help you debug your code. Please do not ask.
 
 The data for this section come from the [AEA's data and code repository](https://www.openicpsr.org/openicpsr/project/139401/version/V1/view) for a 2021 paper by Kelly Bedard, Maxine Lee, and Heather Royer titled [*Using Longitudinal Data to Explore the Gender Gap for Academic Economists*](https://www.aeaweb.org/articles?id=10.1257/pandp.20211087).
 
-**Note** While Bedard, Lee and Royer focus on a panel, we are going to focus on the last year that we observe each faculty member in their panel. I already created this cross-sectional dataset: `aeapnp_bedard_lee_royer.csv`. Do not use their panel dataset.
+**Note** While Bedard, Lee and Royer focus on a panel, we are going to focus on the last year that we observe each faculty member in their panel. I already created [this cross-sectional dataset: `aeapnp_bedard_lee_royer.csv`](https://raw.githack.com/edrubin/EC607S23/master/final/final-home/aeapnp_bedard_lee_royer.csv). Do not use their panel dataset.
 
 **[1.01]** (10 points) Let's get to know the dataset a bit. Create two histograms: (1) the salaries (`salary`) of female (`sex == 'Female'`) faculty members, and (2) the salaries of non-female faculty members.
 
