@@ -114,9 +114,7 @@ You have two instruments
 - $z_2 \sim \text{Uniform}(-5, 5)$
 
 for your endogenous variable of interest
-
 $$x = 1 + z_1 + z_2 - 2 z_2 \times p + v + w$$
-where $I(\cdot)$ denotes an indicator. 
 
 Also $v \sim N(0, 1)$, and $w \sim N(0, 2)$, and $p \sim \text{Bernoulli}(0.2)$ 
 

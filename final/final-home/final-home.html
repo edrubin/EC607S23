@@ -2668,8 +2668,7 @@ vertical-align: -.125em;
 <li><span class="math inline">\(z_1 \sim \text{Uniform}(-5, 5)\)</span></li>
 <li><span class="math inline">\(z_2 \sim \text{Uniform}(-5, 5)\)</span></li>
 </ul>
-<p>for your endogenous variable of interest</p>
-<p><span class="math display">\[x = 1 + z_1 + z_2 - 2 z_2 \times p + v + w\]</span> where <span class="math inline">\(I(\cdot)\)</span> denotes an indicator.</p>
+<p>for your endogenous variable of interest <span class="math display">\[x = 1 + z_1 + z_2 - 2 z_2 \times p + v + w\]</span></p>
 <p>Also <span class="math inline">\(v \sim N(0, 1)\)</span>, and <span class="math inline">\(w \sim N(0, 2)\)</span>, and <span class="math inline">\(p \sim \text{Bernoulli}(0.2)\)</span></p>
 <p><em>Hint:</em> Use <code>runif</code> and <code>rnorm</code> to draw from the uniform and normal distributions. Similarly, you can use the <code>rbinom()</code> function to draw from the Bernoulli distribution.</p>
 <p>Finally, your outcome of interest is <span class="math display">\[y = 2 + 3 x + x \times p + 2 \times u + w\]</span> with <span class="math inline">\(u \sim N(0, 1)\)</span>.</p>
